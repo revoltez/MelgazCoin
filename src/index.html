@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<title>DZ Token Sale</title>
+	</head>
+	<body class="bg-dark">
+		<div id="particles-js">
+			<div style="position: absolute; width: 100%;">
+				<div class="container">
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<h1
+						class="text-light"
+						style="text-align: center;"
+					>
+						DZ Token ICO
+					</h1>
+					<br />
+					<form>
+						<div
+							class="form-group text-center"
+						>
+							<label
+								class="alert alert-info"
+								for="NumberOfTokens"
+								id="UserInfo"
+								style="
+									display: none;
+								"
+							>
+								Token price is
+								<span
+									id="TokenPrice"
+								></span>
+								ETH, you
+								currenttly have
+								<span
+									id="userTokens"
+									class=".text-warning"
+								></span>
+								DZTokens
+							</label>
+							<div
+								style="
+									display: none;
+								"
+								id="form-data"
+							>
+								<div
+									class="input-group"
+								>
+									<input
+										class="form-control col-lg-10 text-center"
+										type="number"
+										id="NumberOfTokens"
+										name="numberOfTokens"
+										value="1"
+										min="1"
+									/>
+									<button
+										class="btn-primary form-control col-lg-2"
+										id="Buy"
+									>
+										Buy
+										Tokens
+									</button>
+								</div>
+								<br />
+								<div
+									class="progress"
+								>
+									<div
+										class="progress-bar"
+										role="progressbar"
+										aria-valuenow="70"
+										aria-valuemin="0"
+										style="
+											width: 50%;
+										"
+										aria-valuemax="100"
+									>
+										50%
+										Tokens
+										sold
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!--<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>-->
+		<script src="./js/particles.min.js"></script>
+		<script>
+			particlesJS.load(
+				"particles-js",
+				"particles.json",
+				function () {
+					console.log(
+						"callback - particles.js config loaded"
+					);
+				}
+			);
+		</script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+
+		<script charset="utf-8"></script>
+		<script src="./js/bundle.js"></script>
+	</body>
+</html>

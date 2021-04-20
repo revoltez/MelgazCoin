@@ -1,0 +1,26 @@
+{
+	"name": "DZTokensale",
+	"version": "1.0.0",
+	"description": "DAPP Token sale ICO",
+	"main": "truffle-config.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"dev": "lite-server",
+		"bundle": "browserify -d ./src/js/app.js > ./src/js/bundle.js -t babelify"
+	},
+	"author": "salih",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.13.15",
+		"@babel/preset-env": "^7.13.15",
+		"babelify": "^10.0.0",
+		"lite-server": "^2.6.1"
+	},
+	"dependencies": {
+		"@metamask/detect-provider": "^1.2.0",
+		"particles.js": "^2.0.0",
+		"web3": "^1.3.5"
+	}
+}

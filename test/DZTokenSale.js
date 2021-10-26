@@ -7,7 +7,7 @@ contract("DZTokenSale", (accounts) => {
   it("Testing the Deployment of TokenSALE smart contract", async () => {
     const TokenInstance = await DZTokenSale.deployed();
     const tokenPrice = await TokenInstance.TokenPrice();
-    assert.equal(tokenPrice, 10000000000, "testing the token price value");
+    assert.equal(tokenPrice, 1000000000000000, "testing the token price value");
   });
 
   it("tesint the buyTokens function", async () => {
@@ -24,7 +24,7 @@ contract("DZTokenSale", (accounts) => {
     const numberofTokens = 50;
     const receipt2 = await TokenInstance.buyTokens(numberofTokens, {
       from: buyer,
-      value: 10000000000 * 50,
+      value: 1000000000000000 * 50,
     });
     const TokensSold = await TokenInstance.TokensSold();
     assert.equal(TokensSold.toNumber(), 50, "testing value of tokens sold");

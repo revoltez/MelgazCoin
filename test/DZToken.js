@@ -39,9 +39,8 @@ contract("DZToken", (accounts) => {
 
     const AC2Balance = await DZInstance.balanceOf(accounts[2]);
     const AC0Balance = await DZInstance.balanceOf(accounts[0]);
-
     assert.equal(AC2Balance, 30);
-    assert.equal(AC0Balance, 870);
+    assert.equal(AC0Balance, 9999870);
   });
 
   /*  it("should be equal to 1000", async () => {
